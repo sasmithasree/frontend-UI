@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="u.css">
+        
+        <title>summer Interns</title>
+        <style>
+   
+        </style>
+    </head>
+    <body>
+      <div class="main-header">
+        <div class= "main-title"><img src ="Group 20399.svg"></div>
+       <div class="title"><img src = "logo (2).svg"></div>
+        
+      </div>
+        
+        <h1>Invoice list</h1>
+        <div class = "container">
+            <div1>
+            
+            <input type ="button" value ="+add"   class="add" id="myBtn-1">
+            <button id="edit-myBtn"class="edit">Edit</button>
+            <input type="button" value = "- delete" class="delete"  id="myBtn2">
+            
+            <input type= "text" placeholder = "search by invoice" id = "filter" >
+            </div1>
+            <div  id="myModal-1">
+                <div class="model" id="model">
+                    <div class = "model-header">
+                        
+                        <div class="title">Add invoice</div>
+                        <span class ="close-button" >&times;</span>
+                        
+                    </div>
+                    
+                    <div class="model-body">
+                        <form>
+                           customer Name*  <input type="text" class="sbar" >
+                            Due Date*   <input type="date"class="sbar" >
+                            <br>
+                            <br>
+                            customer Number *   <input type="text"class="sbar">
+                            Notes*        <input type="text"class="sbar" style= padding:30px>
+                                
+                            <br>
+                            <br>
+                            Invoice Id*    <input type="text" class="sbar">
+                            <br>
+                            <br>
+                            Invoice amount*   <input type="text" class="sbar">
+        
+                        </form>
+        
+                    </div>
+                    <div class="model-footer">
+                        <button data-close-button  class="a-cancel">cancel</button>
+                        <button  class="a-add">add</button>
+                        <button class="a-clear">clear</button>
+        
+                    </div>
+          
+                </div>  
+            
+            </div>
+            <div id="edit-myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                 <div class="modal-header">
+                  <p>Invoice Edit</p>
+                  <span class="close">&times;</span>
+                  
+                  </div>
+              
+                  <form class="modal-body">
+                      invoice amount*:<input type="text" class="Ebar">
+                      <br>
+                      <br>
+                      notes*:<input type="text" class="Ebar">
+                  </form>
+                  <div class="footer-modal">
+                      <button class="E-cancel">cancel</button>
+                      <button style=float:right class="E-reset">reset</button>
+                      <button style=float:right class="E-save">save</button>
+              
+                  </div>
+                </div>
+                 
+              </div>
+              <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="d-modal-content">
+      <div class="d-modal-header">
+         <p>Delete Record(s)?</p>
+         <span class="d-close">&times;</span>
+    
+     </div>
+     <div class="d-modal-body">
+          <p>You will lose your records after this action.we cant recover them
+              once you delete.<br>
+              are you sure you want to permantly delete them.
+          </p>
+     </div>
+     <div class="d-modal-footer">
+         <button class="d-cancel">cancel</button>
+         <button class="d-delete">delete</button>
+
+     </div>
+
+    </div>
+    </div>
+
+            
+        <br>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th > </th>
+                       <th>customer name</th>
+                       <th>customer#</th>
+                       <th>invoice#</th>
+                       <th>invoice amount</th>
+                       <th>Due date</th>
+                       <th>predicted payment date</th>
+                       <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id ="table body">
+                    <tr>
+                        <td><input type = "checkbox" class = "check-box"></td>
+                        <td>ramu</td>
+                        <td>234083</td>
+                        <td>2345678</td>
+                        <td>1400000</td>
+                        <td>12-12-2021</td>
+                        <td>12-1-2022</td>
+                        <td>lorem </td>
+                    </tr>
+                    <tr>
+                        <td><input type = "checkbox" class="check-box"></td>
+                        <td>shivan</td>
+                        <td>234083</td>
+                        <td>2345678</td>
+                        <td>1400000</td>
+                        <td>12-12-2021</td>
+                        <td>12-1-2022</td>
+                        <td>lorem </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><input type = "checkbox"  class="check-box"></td>
+                        <td>ramu</td>
+                        <td>234083</td>
+                        <td>2345678</td>
+                        <td>1400000</td>
+                        <td>12-12-2021</td>
+                        <td>12-1-2022</td>
+                        <td>lorem </td>
+                    </tr>
+                    <tr>
+                        <td><input type = "checkbox" class="check-box"></td>
+                        <td>sunil</td>
+                        <td>234083</td>
+                        <td>2345678</td>
+                        <td>1400000</td>
+                        <td>12-12-2021</td>
+                        <td>12-1-2022</td>
+                        <td>lorem </td>
+                    </tr>
+                    <tr>
+                        <td><input type = "checkbox" class="check-box" ></td>
+                        <td>rachile</td>
+                        <td>234083</td>
+                        <td>2345678</td>
+                        <td>1400000</td>
+                        <td>12-12-2021</td>
+                        <td>12-1-2022</td>
+                        <td>lorem </td>
+                        </tr>
+                        <tr>
+                            <td><input type = "checkbox" class="check-box"></td>
+                            <td>john</td>
+                            <td>234083</td>
+                            <td>2345678</td>
+                            <td>1400000</td>
+                            <td>12-12-2021</td>
+                            <td>12-1-2022</td>
+                            <td>lorem </td>
+                            </tr>
+                            <tr>
+                                <td><input type = "checkbox" class="check-box" ></td>
+                                <td>ben</td>
+                                <td>234083</td>
+                                <td>2345678</td>
+                                <td>1400000</td>
+                                <td>12-12-2021</td>
+                                <td>12-1-2022</td>
+                                <td>lorem </td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" class="check-box" ></td>
+                                    <td>calender</td>
+                                    <td>234083</td>
+                                    <td>2345678</td>
+                                    <td>1400000</td>
+                                    <td>12-12-2021</td>
+                                    <td>12-1-2022</td>
+                                    <td>lorem </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type = "checkbox" class="check-box" ></td>
+                                        <td>Amy</td>
+                                        <td>234083</td>
+                                        <td>2345678</td>
+                                        <td>1400000</td>
+                                        <td>12-12-2021</td>
+                                        <td>12-1-2022</td>
+                                        <td>lorem </td>
+                                        </tr>
+                </tbody>
+            </table>
+
+        </div>
+        
+        <script src="u.js"></script>
+
+    </body>
+</html>
